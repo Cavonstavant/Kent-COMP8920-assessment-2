@@ -37,7 +37,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          file: ${{ github.workspace }}/targets/web-server/Dockerfile
-          context: ${{ github.workspace }}/targets/web-server
+          file: ${{ github.workspace }}/targets/web_server/Dockerfile
+          context: ${{ github.workspace }}/targets/web_server
           push: true
-          tags: "Cavonstavant/web-server:latest"
+          tags: "cavonstavant/web_server:latest"
