@@ -1,4 +1,4 @@
-name: Build and Push Docker Image
+name: Build and Push WebServer Docker Image
 
 on:
   push:
@@ -43,7 +43,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: .
+          context: targets/web-server
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
