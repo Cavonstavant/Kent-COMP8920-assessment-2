@@ -40,4 +40,4 @@ jobs:
           file: ${{ github.workspace }}/targets/web-server/Dockerfile
           context: ${{ github.workspace }}/targets/web-server
           push: true
-          tags: "user/web-server:latest"
+          tags: "Cavonstavant/web-server:latest"
