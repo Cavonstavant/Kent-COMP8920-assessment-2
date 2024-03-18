@@ -40,4 +40,5 @@ jobs:
           file: ${{ github.workspace }}/targets/web-server/Dockerfile
           context: ${{ github.workspace }}/targets/web-server
           push: true
-          tags: "latest"
+          tags: "web-server"
+          labels: "latest"
