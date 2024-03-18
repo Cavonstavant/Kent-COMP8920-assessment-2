@@ -43,7 +43,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: ${{ github.workspace}}/Kent-COMP8920-assessment-2/targets/web-server/Dockerfile
+          context: ${{ github.workspace}}/Kent-COMP8920-assessment-2/targets/web-server/
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
