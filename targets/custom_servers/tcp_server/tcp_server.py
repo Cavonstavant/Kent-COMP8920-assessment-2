@@ -15,4 +15,5 @@ if __name__ == "__main__":
     HOST, PORT = sys.argv[1] or "0.0.0.0", int(sys.argv[2]) or 9999
     with socketserver.TCPServer((HOST, PORT), ExampleTCPHandler) as server:
         server.allow_reuse_address = True
-        server.serve_forever()
+        while True:
+            server.serve_forever()
