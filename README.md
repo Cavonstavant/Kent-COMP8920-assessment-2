@@ -10,9 +10,11 @@ All templates will be found in the nuclei `nuclei_templates` directory.
 
 ### Protocols
 
-- [ ] HTTP & Raw HTTP
-- [ ] TCP
-- [ ] JavaScript enabled protocol
+- [x] HTTP
+- [x] TCP
+- [x] JavaScript enabled protocol
+  - [x] Postgres
+  - [x] Redis
 
 ## Targets
 
