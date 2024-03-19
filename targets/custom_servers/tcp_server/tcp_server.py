@@ -7,7 +7,7 @@ class ExampleTCPHandler(socketserver.BaseRequestHandler):
         print("{} wrote:".format(self.client_address[0]))
         print(self.data)
         if b'secret' in self.data:
-            self.request.sendall(b"TCP secret: 5678\n")
+            self.request.sendall(b"TCP secret: 5678!\n")
         else:
             self.request.sendall(b"Basic TCP server\n")
 
