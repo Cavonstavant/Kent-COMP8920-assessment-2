@@ -1,16 +1,16 @@
-name: Build and Push WebServer Docker Image
+name: Build and Push TCPServer Docker Image
 
 on:
   push:
     branches:
       - main
     paths:
-      - 'targets/web_server/**'
+      - 'custom_servers/targets/tcp_server/**'
   workflow_dispatch:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: web_server
+  IMAGE_NAME: tcp_server
 
 jobs:
   build-and-push:
@@ -37,7 +37,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          file: ${{ github.workspace }}/targets/web_server/Dockerfile
-          context: ${{ github.workspace }}/targets/web_server
+          file: ${{ github.workspace }}/targets/custom_servers/tcp_server/Dockerfile
+          context: ${{ github.workspace }}/targets/custom_servers/tcp_server
           push: true
-          tags: "ghcr.io/cavonstavant/web_server:latest"
+          tags: "ghcr.io/cavonstavant/tcp_server:latest"
