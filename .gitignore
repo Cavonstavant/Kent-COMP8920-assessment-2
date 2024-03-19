@@ -1,2 +1,2 @@
 .venv
-targets/web_server/__pycache__
+targets/custom_servers/web_server/__pycache__
