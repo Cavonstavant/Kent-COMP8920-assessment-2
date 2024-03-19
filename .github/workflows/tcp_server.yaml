@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'custom_servers/targets/tcp_server/**'
+      - 'targets/custom_servers/tcp_server/**'
   workflow_dispatch:
 
 env:
